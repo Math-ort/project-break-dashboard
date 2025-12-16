@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj Digital</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+    
+        <div id="home" class="home">
+            <div class="app-icon" onclick="openApp('links')">🔗<span>Enlaces</span></div>
+            <div class="app-icon" onclick="openApp('weather')">⛅<span>Clima</span></div>
+            <div class="app-icon" onclick="openApp('password')">🔐<span>Password</span></div>
+            <div class="app-icon" onclick="openApp('clock')">🕒<span>Reloj</span></div>
+          </div>
+   
+    
+    <div class="reloj">
+        <span id="hrs">00</span> :
+        <span id="min">00</span> :
+        <span id="seg">00</span>
+    </div>
+    
+    <div class="fecha">
+        <span id="day">00</span> -
+        <span id="month">00</span> -
+        <span id="year">0000</span> 
+    </div>
+
+    
+        
+        <div class="dashboard">
+            <div class="column">
+                
+                <div id="listadoLinks">
+                    
+                    <h3> Añade tu enlace de interes: </h3>
+                    <input type="text" id="tituloUsuario" placeholder="Nombre de tu enlace">
+                    <input type="url" id="urlUsuario" placeholder="Pega aqui la URL">
+                    <button type="button" id="addLink">Añadir Enlace</button>
+                    <div id="linksContainer"></div>
+                </div>
+
+            </div>
+   
+    <div class="column">   
+
+    <div class="weather-card"> 
+            <h3 id="ciudad"></h3>
+            <h3 id="temperatura"></h3>
+            <img id="icono" alt="icono clima">
+            <h3 id="datos"></h3>
+            <h3 id="estado"></h3>
+            <h3 id="precipitaciones"></h3>
+        </div>
+        </div>
+
+        
+        <div class="password-card">
+            <h2> Crea tu contraseña: </h2>
+            
+            <label> 
+        <input type="number"id="pass" min="12" max="50" value="12"> Numero de caracteres de la contraseña:
+        </label>
+        <button id="generatePass">Generar Contraseña</button>
+        
+        <div id="passwordBox" class="password-result"></div>
+        
+        </div>    
+   
+
+ </div>
+ <script src="./script.js"></script>
+</body>
+
+
+</html>
