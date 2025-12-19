@@ -159,24 +159,6 @@ function cambiarFondo() {
   cambiarFondo(),
   setInterval(cambiarFondo, 15000);
 
-  function openApp(appId) {
-    // Ocultar el dashboard
-    document.getElementById("dashboard").classList.add("hidden");
-  
-    // Mostrar solo la app seleccionada
-    document.querySelectorAll(".app").forEach(app => {
-      app.classList.add("hidden");
-    });
-    document.getElementById(appId).classList.remove("hidden");
-  }
-  
-  function goHome() {
-    // Ocultar todas las apps individuales
-    document.querySelectorAll(".app").forEach(app => {
-      app.classList.add("hidden");
-    });
-    // Mostrar dashboard completo
-    document.getElementById("dashboard").classList.remove("hidden");
-  }
+
   
   
